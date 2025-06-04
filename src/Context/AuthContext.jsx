@@ -40,7 +40,7 @@ export function AuthProvider({ children }) {
         { withCredentials: true }
       );
       setUser(res.data.data.user);
-      navigate("/dashboard");
+      navigate("/login");
     } catch (err) {
       setError(err.response?.data?.message || "Signup failed");
       throw err;

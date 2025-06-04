@@ -20,7 +20,7 @@ export default function Dashboard() {
 
   const handleShopClick = (shopName) => {
     // Redirect to subdomain
-    window.location.href = `http://${shopName}.localhost:5173`;
+    window.location.href = `http://${shopName}.shop-portal-client.vercel.app`;
   };
 
   return (
